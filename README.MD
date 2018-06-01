@@ -29,3 +29,5 @@
 
 
 *__This code use to text bold and cursive__*
+
+*Commit by @manuelguarniz*
