@@ -18,3 +18,7 @@
 ### *New Line to code Javascript*
 
 > `var xd = 'Not Fuck You'`
+
+### Part Two: description to base git bash
+
+> `//This line code in comment`
