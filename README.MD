@@ -22,3 +22,6 @@
 ### Part Two: description to base git bash
 
 > `//This line code in comment`
+
+
+*__This code use to text bold and cursive__*
