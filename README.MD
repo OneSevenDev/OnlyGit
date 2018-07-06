@@ -94,4 +94,8 @@ Se puede usar HEAD (commit actual) o el HASH del commit
 > 
 > Listar los cambios definidos por el usuario, incluye los alias
 > 
-> `git config --global --list`
+> `git config --global -l`
+> 
+> Eliminar un alias
+> 
+> `git config --global --unset alias.unstage`
