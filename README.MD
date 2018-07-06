@@ -7,3 +7,5 @@
 _Quer terror me borro el cambio_
 
 - estoy que agrego un nuevo texto
+
+- Todo ok, sigue avanzando
