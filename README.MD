@@ -1,33 +1,29 @@
-# Title readme
+# Ayuda de comandos
 
-*First commend in English*
+## Agregar Archivos del *Directorio de trabajo* al *Staging Area*
 
-## Second Part
-
-- Test only titles -> #
-- Test only subtitle -> ##
-
-> - Merge with other branch for delete change
+> `git add <path_file>`
 > 
-> **New text to pushing .octicon-logo-github**
+> `git add .`
 
-## Third Part
+## Confirmar cambios en *Staging Area*
 
-1. Numeration one
-1. Numeration two
-1. Numeration three
+> Usando *Nano* (Editor de textos en la terminal)
+> 
+> `git commit` 
+> 
+> `git commit -m 'Descripcion de los cambios'`
 
-> It's blok the text to test for change branch to base: `00a7d0d604f602b92ce236a0f5c8bc03b2ed7a70`
+## Retornando del Staging Area al Directorio de Trabajo
 
-### *New Line to code Javascript*
+> `git reset HEAD <path_file>` 
+> 
+> `git reset HEAD .`
 
-> `var xd = 'Not Fuck You'`
+## Eliminando completamente commit
 
-### Part Two: description to base git bash
-
-> `//This line code in comment`
-
-
-*__This code use to text bold and cursive__*
-
-*Commit by @manuelguarniz*
+> `git reset --hard <hash_commit>` 
+> 
+> Elimina completamente el último commit
+> 
+> `git reset --hard HEAD~1 .`
