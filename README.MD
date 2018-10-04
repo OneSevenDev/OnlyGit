@@ -99,23 +99,3 @@ Se puede usar HEAD (commit actual) o el HASH del commit
 > Eliminar un alias
 > 
 > `git config --global --unset alias.unstage`
-
-## Eliminar un archivo o directorio del cache de **Git**
-
-> Renombrar un archivo con conflictos por mayusculas y minusculas: Renombrar carpeta no necesaria
->
-> ![](https://github.com/OneSevenDev/OnlyGit/blob/master/resources/folder_conflict_git.png?raw=true)
->
-> `git rm -r --cached OnlyGit/private/`
-> 
-> Eliminar un archivo del cache de Git
-> 
-> `git rm --cached OnlyGit/private/readme_test.MD`
->
-> En cualquier de los casos luego hacer un *commit*
-
-## Mover un archivo de un directorio a otro en **Git**
-
-> `git mv OnlyGit/private/ OnlyGit/Private/`
->
-> posterior al cambio hacer un *commit*
