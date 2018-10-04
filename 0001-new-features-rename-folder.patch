@@ -1,0 +1,82 @@
+From 3e496f8342f96a6b59aeb5e5cebd099bba34cb6a Mon Sep 17 00:00:00 2001
+From: mguarniz <mguarniz@xirectss.com>
+Date: Thu, 6 Sep 2018 16:19:20 -0500
+Subject: [PATCH] new features, rename folder
+
+---
+ README.MD                         |  22 +++++++++++++++++++++-
+ resources/folder_conflict_git.png | Bin 0 -> 1486 bytes
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+ create mode 100644 resources/folder_conflict_git.png
+
+diff --git a/README.MD b/README.MD
+index 9067c04..f230bc8 100644
+--- a/README.MD
++++ b/README.MD
+@@ -98,4 +98,24 @@ Se puede usar HEAD (commit actual) o el HASH del commit
+ > 
+ > Eliminar un alias
+ > 
+-> `git config --global --unset alias.unstage`
+\ No newline at end of file
++> `git config --global --unset alias.unstage`
++
++## Eliminar un archivo o directorio del cache de **Git**
++
++> Renombrar un archivo con conflictos por mayusculas y minusculas: Renombrar carpeta no necesaria
++>
++> ![](https://github.com/OneSevenDev/OnlyGit/blob/master/resources/folder_conflict_git.png?raw=true)
++>
++> `git rm -r --cached OnlyGit/private/`
++> 
++> Eliminar un archivo del cache de Git
++> 
++> `git rm --cached OnlyGit/private/readme_test.MD`
++>
++> En cualquier de los casos luego hacer un *commit*
++
++## Mover un archivo de un directorio a otro en **Git**
++
++> `git mv OnlyGit/private/ OnlyGit/Private/`
++>
++> posterior al cambio hacer un *commit*
+\ No newline at end of file
+diff --git a/resources/folder_conflict_git.png b/resources/folder_conflict_git.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..b4e52435188846d37c19c69c652635333083a6f4
+GIT binary patch
+literal 1486
+zcma)+dpOg39LIli>MVD~ak?m7jzh8I$z_h`X%<ZxBE%SnSSD+XW=+L(bn#GHr?QMj
+z5hgabb|z+=O)e3+%!c7{soY1o48vJ}obx>AIhW`B@wvRd-#@<3_j7qCpK&{-skU1U
+z002#-6T%Y!K-$XOZ<~tJm&`zIlmSHaJmmne+YBa@uqDj?v^@ZnQPmZ}Ta~OD<>W^M
+z04?Dc12qzu=K)|V28pmg8yh$?0CPX+zq4+BO@wC_Gm8~~j}HZKYPubw=3r)G;%ahN
+zED+$W({#SOfDMT{F?N-7LIWFAZx(HHGi25_OiS33xTf)xY_pL-KOc7gXNX)z57y1D
+zRRJuzRh&H3_d7zacOxJ}pw`B|KUj|gc>a0$Hz>nhnIstsS@2SA5Fv?2TgwfwrL*wq
+z5il<@yx$NY+^nRzVNAv2k{eHn0Rwh;QQPgzp^4sXvpiY0vHIJRrET&WGhdf?{3DN!
+z8TT#W_Ec|n74U{-1_|YBbuQ?av~aOo-{<KKGd`Cjy>v%}sN&Js`S)Z3juXqHtv6m?
+zIXYFqn)wO*+i5$mYw)U0uO!i-#le9o&u3Napl3Wk{0s2af{#cd(<VMdCob|mF?11^
+z?8<s4$GU-iFh8SL8Q2Ode(5-iPiN0E8A5H=Y%u|dGyjFXS86x0-sXM8KRT|a1c$^<
+z<$cJd1e9?!epoj3??~yG6O-ZTx2E_aMJFmjYo9daN~0*O5VaF#S!rtf&Btkb*&y`S
+zPH8}J+DMPZxPcg|_HATLqXlPg&km!{1ce^MzGXI(8Y{QrRPYmY?U=pj?y&Wcu2*vA
+za+X`l`|iSKysKU_0&-g9O^gLwGiToZxZT&6heq?c^U_7hx(9p23LAesSHnRlY)%VS
+zgfqS>xEi%*3mjdzu+mJOEAydncLXLEMx2C9E{qHC)3$Za^@T=WNGyyn`#5Nb2P3V-
+z5UBag_UL)%AjGc8L;F||B2JZG#YxSr-UyGcl)wB;cYYCPxPfwy8Hs^lWGclzPtcvB
+z&Kcfj+H}HM)P-weqL;-oWND*b${ovG&C4n@8i$h0DSY2%8-Y#D<xY_Ro_}kWG*~uu
+zvYlm|g8C2-#vZV6qzfrB7xREe*S&SbIkbD8uj6v9uc_BQ&u|fyi+9Ewf9U&Yhr06$
+z<5xj8fAe%Si;%I5ZeMv^kOeCvdo@jfb&V>v3<TEna}wIe*fP>0rp~$PqF)>0>pDXu
+zx@D!7I=uT+%Z#j#0Sl9s(h7}h7idjq1<PRCm%*;_fz)MF(ZFFG=s9!i{T%({DgOZ9
+z<H{cTgIWdudlQ25j}BU0fwa7}>Z#3vuSOJc$ZW=Qu)@BcBk4WoV?66R+A(p1vUVhm
+z0pqyT;6If{XkQ;{P2|*Pg)6-9rfZz0R;z}Ke#)7z%}|~|I`F0Q^oGeZ?xDL<L#?}?
+z*>c5|lIR6qh$ZNx_5n=((ZDVhj+s?g>~sv#2%4b@wd<1f>_}DgEX0jQi0>Yb<eI}X
+zr?`=pY3yq3gO0gJI+m&Pi6cGb<E|LeYSeaL@?>6v303(<$EnRx50Yi8qjqCa|6$gl
+z?0c7>1<C02@Vk%oN@%acc2j$3st-+tlHn+o*v*Aw9(cO#gY`B#m!Vlw-wiF&&!#uT
+z+DGI3u=&wabYjwSbz0|47t$)vo3)2t)vq-~Y3s|uDGL<n`UFj*hZ|Ju!-``uL++u9
+zmbuDdqbGN0l+6v)5Q>WohA4|rv|U_2<~l0pq*E!qgEbeHiYylc{gZ5r^D@>|m7hS5
+xaR9>J|5T>GXqGNV(#!&|!4dz~aQc3^cKe%yl3kbm^_3b7ARXNhY=?7+zXL$X*-rof
+
+literal 0
+HcmV?d00001
+
+-- 
+2.7.4
+
